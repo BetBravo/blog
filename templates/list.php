@@ -7,9 +7,7 @@
 <ul>
     <?php foreach ($posts as $post): ?>
         <li>
-            <a href="/read?id=<?php echo $post['id'] ?>">
-                <?php echo $post['title'] ?>
-            </a>
+            <a href="http://localhost:8080/blog/show.php?id=<?php echo $post['id'] ?>"> <?php echo $post['title'] ?>  </a>
         </li>
     <?php endforeach; ?>
 </ul>
